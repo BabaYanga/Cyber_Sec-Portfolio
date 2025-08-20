@@ -1,0 +1,22 @@
+# Apache Web Server Security Audit
+
+## Overview  
+In this lab, I assumed the role of a **Security Engineer** tasked with validating that security requirements were implemented correctly on a newly built Apache web server.  
+The goal was to ensure the server adhered to baseline security best practices before moving into production.  
+
+---
+
+## Lab Objectives  
+- Verify Apache version is up to date.  
+- Confirm directory listing is disabled.  
+- Ensure Apache does not reveal its version in HTTP headers.  
+- Test redirection from HTTP → HTTPS.  
+- Validate SSL certificate configuration.  
+
+---
+
+## Steps & Commands  
+
+1. **Check Apache Version**  
+   ```bash
+   sudo apachectl -V | grep "version"
